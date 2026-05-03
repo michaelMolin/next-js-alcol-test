@@ -1,9 +1,13 @@
 import { UserComponentInterface } from "../interfaces/UserInterface"
+import NextStep from "./NextStep"
+import { WheelPickerKg } from "./WheelPickerKg"
+
 export default function UserData(props : UserComponentInterface) {
+    const rootBaseClass = props.step == 2 ? "mt-9 px-5 h-85/100" : "mt-9 px-5"
     return (
         <div>
-            <main className=" flex flex-col justify-between items-center h-full">
-                <div className="mt-9 px-5">
+            <main className="flex flex-col justify-between items-center h-screen">
+                <div className={`base-class ${rootBaseClass}`} >
                     <div onClick={props.prevStep}>
                         <img src="assets/back.svg" alt="back img" />
                     </div>
@@ -21,7 +25,8 @@ export default function UserData(props : UserComponentInterface) {
                     <p className="text-display-4 my-4">
                         {props.text}
                     </p>
-                    <div className="my-6 h-full flex flex-col justify-around items-center gap-24">
+                    {props.step !== 2 &&
+                    <div className="my-6 flex flex-col justify-around items-center gap-24">
                         <div className="w-[230px] h-[230px] rounded-xl bg-blue-200 flex justify-center items-center">
                            <div className="flex flex-col justify-center items-center" onClick={props.box1function}>
                                  {props.box1image.length > 0 && 
@@ -40,7 +45,17 @@ export default function UserData(props : UserComponentInterface) {
                             </div>
                         </div>
                     </div>
+                    }
+                    {props.step == 2 && 
+                    <div className="my-6 flex flex-col justify-around items-center">
+                        <WheelPickerKg weight={props.weight} handleWeightFunction={props.handleWeightFunction}/>
+                    </div>
+                    }
+                    
                 </div>
+                {props.step == 2 && 
+                    <NextStep text="PROSEGUI" nextStepFunction={props.nextStep} />    
+                }
             </main>
         </div>
     )

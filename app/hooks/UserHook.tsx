@@ -4,7 +4,7 @@ import type {UserInterface} from "../interfaces/UserInterface.ts";
 export const useUserData = () => {
     const [userData, setUserData] = useState<UserInterface>({
         gender: '-', 
-        weight: 0,
+        weight: '50',
         hasEaten: false,
         hasDrivenLicense: true,
     })

@@ -1,6 +1,6 @@
 export interface UserInterface {
     gender: string;
-    weight: number;
+    weight: string;
     hasEaten: boolean
     hasDrivenLicense: boolean
 }
@@ -15,5 +15,8 @@ export interface UserComponentInterface {
     box1image: string,
     box2image: string,
     box1function: () => void,
-    box2function: () => void
+    box2function: () => void,
+    nextStep: () => void
+    handleWeightFunction: (weight: string) => void
+    weight: string
 }
