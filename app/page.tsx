@@ -3,12 +3,18 @@ import {useState} from "react";
 import Homepage from "./components/homepage/Homepage";
 import UserData from "./components/UserData";
 import { useUserData } from "./hooks/UserHook";
+import {useBeverageData} from "./hooks/BeverageHook";
+
+import Beverages from "./components/Beverages";
 
 export default function Home() {
   const [step, setStep] = useState<number>(0);
   const nextStep = () => setStep(prev => prev +1)
   const prevStep = () => setStep(prev => prev -1)
   const {userData, setUserData} = useUserData();
+
+  const { beverageData, handleQuantityChange, totalBeverages } = useBeverageData();
+
 
   const handleGenderChange = (gender: string) => {
         setUserData(prev => ({...prev, gender: gender}))
@@ -90,6 +96,15 @@ export default function Home() {
           nextStep={nextStep}
           handleWeightFunction={handleWeightChange}
           weight={userData.weight}
+        />
+      }
+      {step== 5 &&
+        <Beverages
+          prevStep={prevStep}
+          nextStep={nextStep}
+          beverageData={beverageData}
+          onQuantityChange={handleQuantityChange}
+          totalBeverages={totalBeverages}
         />
       }
     </div>

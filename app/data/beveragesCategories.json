@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Birre",
+    "image": "/images/beer-lager.jpg",
+    "alcoholPercentageText": "4° - 6° Vol",
+    "alcoholPercentageNumber": 5
+  },
+  {
+    "id": "2",
+    "name": "Vino",
+    "image": "/images/wine-red.jpg",
+    "alcoholPercentageText": "8° - 12° Vol",
+    "alcoholPercentageNumber": 10
+  },
+  {
+    "id": "3",
+    "name": "Superalcolici",
+    "image": "/images/vodka.jpg",
+    "alcoholPercentageText": "30° - 40° Vol",
+    "alcoholPercentageNumber": 30
+  },
+  {
+    "id": "4",
+    "name": "cocktails",
+    "image": "/images/cocktail.jpg",
+     "alcoholPercentageText": "15° - 30° Vol",
+    "alcoholPercentageNumber": 22
+  }
+]
