@@ -7,8 +7,8 @@ export const useBeverageData = () => {
     const [beverageData, setBeverageData] = useState<QuantityStateInterface[]>(() =>
         beverages.map(beverage => ({ id: beverage.id, quantity: 0 }))
     );
-    const totalBeverages = beverageData.reduce((total, item) => total + item.quantity, 0)
 
+    const totalBeverages = beverageData.reduce((total, item) => total + item.quantity, 0)
 
     const handleQuantityChange = (productId: number, newQuantity: number) => {
         setBeverageData(prev =>
@@ -24,7 +24,6 @@ export const useBeverageTakenData = (props: BeverageSelectionInterface) => {
     const beverages: BeverageInterface[] = beverageList;
     const idsBeverageTaken = props.beverageData.filter(item => item.quantity > 0).map(item => item.id);
     return beverages.filter(beverage => idsBeverageTaken.includes(beverage.id))
-
 }
 
 export const getAlcoholicData =  (props: QuantityStateInterface[]) => {
@@ -39,8 +38,8 @@ export const getAlcoholicData =  (props: QuantityStateInterface[]) => {
     let alcoholicGramsTotal = 0;
 
     filterBeverages.forEach(beverage => {
-        let liquids = ( beverage.format * beverage.quantity) /100;
-        let alcoholicGrams = (liquids * 8) * (beverage.alcoholPercentage);
+        const liquids = ( beverage.format * beverage.quantity) /100;
+        const alcoholicGrams = (liquids * 8) * (beverage.alcoholPercentage);
         alcoholicGramsTotal += alcoholicGrams;
     })
 

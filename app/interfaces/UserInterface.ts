@@ -4,7 +4,6 @@ export interface UserInterface {
     hasEaten: boolean
     hasDrivenLicense: boolean
 }
-
 export interface UserComponentInterface {
     prevStep: () => void,
     step: number,

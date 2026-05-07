@@ -5,30 +5,70 @@
     "image": "/images/beer-lager.jpg",
     "category_id": "1",
     "format": 330,
+    "formatText": "Birra piccola (330ml)",
     "alcoholPercentage": 4
   },
   {
     "id": 2,
+    "name": "Birra Lager",
+    "image": "/images/beer-lager.jpg",
+    "category_id": "1",
+    "format": 500,
+    "formatText": "Birra media (500ml)",
+    "alcoholPercentage": 4
+  },
+  {
+    "id": 3,
+    "name": "Birra Rossa",
+    "image": "/images/beer-lager.jpg",
+    "category_id": "1",
+    "format": 330,
+    "formatText": "Birra piccola (330ml)",
+    "alcoholPercentage": 6
+  },
+  {
+    "id": 4,
+    "name": "Birra Rossa",
+    "image": "/images/beer-lager.jpg",
+    "category_id": "1",
+    "format": 330,
+    "formatText": "Birra media (500ml)",
+    "alcoholPercentage": 6
+  },
+  {
+    "id": 5,
+    "name": "Vino Rosso",
+    "image": "/images/wine-red.jpg",
+    "category_id":"2",
+    "format": 150,
+    "formatText": "Calice (150ml)",
+    "alcoholPercentage": 8
+  },
+  {
+    "id": 6,
     "name": "Vino Rosso",
     "image": "/images/wine-red.jpg",
     "category_id":"2",
     "format": 750,
+    "formatText": "Bottiglia (750ml)",
     "alcoholPercentage": 8
   },
   {
-    "id": 3,
+    "id": 8,
     "name": "Vodka",
     "image": "/images/vodka.jpg",
     "category_id": "3",
-    "format": 700,
+    "format": 250,
+    "formatText": "Cocktail (250ml)",
     "alcoholPercentage": 30
   },
   {
-    "id": 4,
+    "id": 9,
     "name": "Gin Tonic",
     "image": "/images/vodka.jpg",
-    "category_id": "4",
-    "format": 500,
+    "category_id": "3",
+    "format": 250,
+    "formatText": "Cocktail (250ml)",
     "alcoholPercentage": 25
   }
 ]

@@ -4,17 +4,6 @@ export interface BeverageCategoryInterface {
     image: string;
     alcoholPercentageText: string,
     alcoholPercentageNumber: number,
-
-}
-export interface BeverageListJsonInterface {
-    id: number
-    name: string;
-    list_ids: number[];
-}
-
-export interface BeverageListPropsInterface extends BeverageListJsonInterface {
-    beverageData: QuantityStateInterface[];
-    onQuantityChange: (productId: number, quantity: number) => void;
 }
 
 export interface BeverageSelectionInterface {
@@ -24,27 +13,24 @@ export interface BeverageSelectionInterface {
     prevStep: () => void
     nextStep: () => void
 }
-
 export interface BeverageInterface {
     id: number
     name: string;
     image: string;
     category_id: string;
     format: number;
+    formatText: string;
     alcoholPercentage: number;
 }
-
 export interface BeveragePropsInterface extends BeverageInterface {
     beverageData: QuantityStateInterface[];
     onQuantityChange: (productId: number, quantity: number) => void;
 }
-
 export interface QuantityPropsInterface {
     productId: number
     beverageData: QuantityStateInterface[];
     onQuantityChange: (productId: number, quantity: number) => void;
 }
-
 export interface QuantityStateInterface {
     id: number
     quantity: number;

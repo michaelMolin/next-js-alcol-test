@@ -7,7 +7,7 @@ export default function BeverageSelection(props: BeveragePropsInterface) {
             <div className="w-1/2">
                 <div>
                     <h4 className="text-title text-display-3">{props.name}</h4>
-                    <p>{props.format} ml</p>
+                    <p className="mt-2">{props.formatText}</p>
                 </div>
             </div>
             <Quantity productId={props.id} beverageData={props.beverageData} onQuantityChange={props.onQuantityChange} />

@@ -19,12 +19,5 @@
     "image": "/images/vodka.jpg",
     "alcoholPercentageText": "30° - 40° Vol",
     "alcoholPercentageNumber": 30
-  },
-  {
-    "id": "4",
-    "name": "cocktails",
-    "image": "/images/cocktail.jpg",
-     "alcoholPercentageText": "15° - 30° Vol",
-    "alcoholPercentageNumber": 22
   }
 ]
