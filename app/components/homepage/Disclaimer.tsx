@@ -7,7 +7,7 @@ export default function Disclaimer(props: {"title": string, "text": string})
                 {props.text}
             </p>
             <div className="w-full flex justify-end items-center">
-                <button className="w-1/2 py-3 border-2 border-blue rounded-full text-center">
+                <button className="w-1/2 py-3 border-2 border-blue rounded-2xl text-center bg-white">
                 <span className="text-display-3 text-title font-bold">Approfondisci</span>
                 </button>
             </div>

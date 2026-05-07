@@ -3,7 +3,8 @@ import NextStep from "./NextStep"
 import { WheelPickerKg } from "./WheelPickerKg"
 
 export default function UserData(props : UserComponentInterface) {
-    const rootBaseClass = props.step == 2 ? "mt-9 px-5 h-85/100" : "mt-9 px-5"
+    const rootBaseClass = props.step == 4 ? "w-full mt-9 px-5 h-85/100" : "mt-9 px-5 w-full"
+    const textBoxClass = props.box1image.length > 0 ? "text-display-1 font-bold mt-2 text-title text-center" : 'text-display-0 font-bold mt-2 text-title text-center'
     return (
         <div>
             <main className="flex flex-col justify-between items-center h-screen">
@@ -16,45 +17,59 @@ export default function UserData(props : UserComponentInterface) {
                             style={{ width: `${(props.step / 4) * 100}%` }}                                                                                                                                  
                         />     
                     </div>
-                    <div className="w-full fex text-center mb-6">
+                    <div className="w-full fex text-center">
                         {props.step} di 4
                     </div>
-                    <h1 className="w-full text-display-1 text-center text-title font-bold">
+                    <div className="my-4 w-full flex justify-end items-center">
+                        <img src="assets/info.svg" />
+                    </div>
+                    <h1 className="w-full text-display-1 text-center text-title font-bold min-h-21">
                         {props.title}
                     </h1>
-                    <p className="text-display-4 my-4">
-                        {props.text}
+                    
+                    <p className="text-display-4 my-4 min-h-10">
+                         {props.text} 
                     </p>
-                    {props.step !== 2 &&
+                    {props.step !== 4 &&
                     <div className="my-6 flex flex-col justify-around items-center gap-24">
-                        <div className="w-[230px] h-[230px] rounded-xl bg-blue-200 flex justify-center items-center">
-                           <div className="flex flex-col justify-center items-center" onClick={props.box1function}>
+                        <div className="w-58 h-58 rounded-xl bg-box flex justify-center items-center">
+                           <div className="flex flex-col justify-center items-center" 
+                                onClick={() => { 
+                                    navigator.vibrate?.(15)
+                                    props.box1function()
+                                }}
+                            >
                                  {props.box1image.length > 0 && 
-                                    <img className="max-w-28" src={props.box1image} alt={props.box1name} />
+                                    <img className="max-w-36" src={props.box1image} alt={props.box1name} />
                                 }
-                                <span className="text-display-2 font-bold mt-2 text-title">{props.box1name}</span>
+                                <span className={`base-class ${textBoxClass}`}>{props.box1name}</span>
                             </div>
                         </div>
 
-                        <div className="w-[230px] h-[230px] rounded-xl bg-blue-200 flex justify-center items-center" >
-                            <div className="flex flex-col justify-center items-center" onClick={props.box2function}>
+                        <div className="w-58 h-58 rounded-xl bg-box flex justify-center items-center" >
+                            <div className="flex flex-col justify-center items-center" 
+                                onClick={() => { 
+                                    navigator.vibrate?.(15)
+                                    props.box2function()
+                                }}
+                            >
                                 {props.box2image.length > 0 && 
-                                    <img className="max-w-28" src={props.box2image} alt={props.box2name} />
+                                    <img className="max-w-36" src={props.box2image} alt={props.box2name} />
                                 }
-                                <span className="text-display-2 font-bold mt-2 text-title">{props.box2name}</span>
+                                <span className={`base-class ${textBoxClass}`}>{props.box2name}</span>
                             </div>
                         </div>
                     </div>
                     }
-                    {props.step == 2 && 
+                    {props.step == 4 && 
                     <div className="my-6 flex flex-col justify-around items-center">
                         <WheelPickerKg weight={props.weight} handleWeightFunction={props.handleWeightFunction}/>
                     </div>
                     }
                     
                 </div>
-                {props.step == 2 && 
-                    <NextStep text="PROSEGUI" nextStepFunction={props.nextStep} />    
+                {props.step == 4 && 
+                    <NextStep text="VAI ALLE BEVANDE" nextStepFunction={props.nextStep} />    
                 }
             </main>
         </div>

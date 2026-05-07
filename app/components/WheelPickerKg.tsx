@@ -10,7 +10,7 @@ export function WheelPickerKg(props: { weight: string; handleWeightFunction: (we
   const [value, setValue] = useState(props.weight);
 
   return (
-    <WheelPickerWrapper className="my-6 h-[480px] bg-[#F5F7FF] flex flex-col justify-around items-center">
+    <WheelPickerWrapper className="my-6 h-98 bg-[#F5F7FF] flex flex-col justify-around items-center">
       <WheelPicker
           optionItemHeight={120}                                                                                                
       classNames={{                                                                                                                                                                    

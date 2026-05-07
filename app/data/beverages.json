@@ -54,8 +54,17 @@
     "alcoholPercentage": 8
   },
   {
+    "id": 11,
+    "name": "Vino Bianco",
+    "image": "/images/wine-red.jpg",
+    "category_id":"2",
+    "format": 150,
+    "formatText": "Calice (125ml)",
+    "alcoholPercentage": 4
+  },
+  {
     "id": 8,
-    "name": "Vodka",
+    "name": "Vodka Lemon",
     "image": "/images/vodka.jpg",
     "category_id": "3",
     "format": 250,
@@ -70,5 +79,33 @@
     "format": 250,
     "formatText": "Cocktail (250ml)",
     "alcoholPercentage": 25
+  },
+
+  {
+    "id": 11,
+    "name": "Spritz Aperol",
+    "image": "/images/vodka.jpg",
+    "category_id": "3",
+    "format": 250,
+    "formatText": "Cocktail (250ml)",
+    "alcoholPercentage": 20
+  },
+  {
+    "id": 12,
+    "name": "Spritz Select",
+    "image": "/images/vodka.jpg",
+    "category_id": "3",
+    "format": 250,
+    "formatText": "Cocktail (250ml)",
+    "alcoholPercentage": 20
+  },
+  {
+    "id": 13,
+    "name": "Spritz Cynar",
+    "image": "/images/vodka.jpg",
+    "category_id": "3",
+    "format": 250,
+    "formatText": "Cocktail (250ml)",
+    "alcoholPercentage": 20
   }
 ]
