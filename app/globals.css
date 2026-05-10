@@ -12,6 +12,18 @@
   --color-text: #666673;
 }
 
+.bg-result-ok {
+  background: radial-gradient(ellipse at center, #EDFFED 0%, #BDFFBF 100%);
+}
+
+.bg-result-warning {
+  background: radial-gradient(ellipse at center, #EDFFED 0%, #FFFCBB 100%);
+}
+
+.bg-result-danger {
+  background: radial-gradient(ellipse at center, #EDFFED 0%, #FFC2C2 100%);
+}
+
 @theme inline {
   --font-aktison: var(--font-atkison);
   --text-display-0: 5rem;

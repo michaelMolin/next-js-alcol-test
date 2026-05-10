@@ -39,7 +39,7 @@ export const getAlcoholicData =  (props: QuantityStateInterface[]) => {
 
     filterBeverages.forEach(beverage => {
         const liquids = ( beverage.format * beverage.quantity) /100;
-        const alcoholicGrams = (liquids * 8) * (beverage.alcoholPercentage);
+        const alcoholicGrams = (liquids * 0.8) * (beverage.alcoholPercentage);
         alcoholicGramsTotal += alcoholicGrams;
     })
 

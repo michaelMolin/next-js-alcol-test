@@ -4,6 +4,7 @@ import Homepage from "./components/homepage/Homepage";
 import UserData from "./components/UserData";
 import { useUserData } from "./hooks/UserHook";
 import {useBeverageData} from "./hooks/BeverageHook";
+import Result from "./components/Result";
 
 import Beverages from "./components/Beverages";
 
@@ -106,6 +107,12 @@ export default function Home() {
           beverageData={beverageData}
           onQuantityChange={handleQuantityChange}
           totalBeverages={totalBeverages}
+        />
+      }
+      {step == 6 && 
+        <Result
+          beverageData={beverageData}
+          userData={userData}
         />
       }
     </div>
