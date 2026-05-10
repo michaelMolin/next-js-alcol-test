@@ -9,7 +9,7 @@ export default function Homepage(props: {"nextStep": () => void}){
             <h1 className="w-full text-display-1 text-center text-title font-bold">
               Test di Autovalutazione del Tasso Alcolico
             </h1>
-            <div className="flex justify-center my-6">
+            <div className="flex justify-center my-4">
               <img className="h-14 w-12" src="assets/img-home.svg" alt="img home"/>
             </div>
         
