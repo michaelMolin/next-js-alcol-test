@@ -3,7 +3,7 @@ import NextStep from "./NextStep"
 import { WheelPickerKg } from "./WheelPickerKg"
 
 export default function UserData(props : UserComponentInterface) {
-    const rootBaseClass = props.step == 4 ? "w-full mt-9 px-5 h-85/100" : "mt-9 px-5 w-full"
+    const rootBaseClass = props.step == 4 ? "w-full mt-2 px-5 h-85/100" : "mt-2 px-5 w-full"
     const textBoxClass = props.box1image.length > 0 ? "text-display-1 font-bold mt-2 text-title text-center" : 'text-display-0 font-bold mt-2 text-title text-center'
     return (
         <div>
@@ -23,16 +23,16 @@ export default function UserData(props : UserComponentInterface) {
                     <div className="my-4 w-full flex justify-end items-center">
                         <img src="assets/info.svg" />
                     </div>
-                    <h1 className="w-full text-display-1 text-center text-title font-bold min-h-21">
+                    <h1 className="w-full text-display-1 text-center text-title font-bold min-h-16">
                         {props.title}
                     </h1>
                     
-                    <p className="text-display-4 my-4 min-h-10">
+                    <p className="text-display-4 my-4 min-h-8">
                          {props.text} 
                     </p>
                     {props.step !== 4 &&
-                    <div className="my-6 flex flex-col justify-around items-center gap-24">
-                        <div className="w-58 h-58 rounded-xl bg-box flex justify-center items-center">
+                    <div className="my-3 flex flex-col justify-around items-center gap-24">
+                        <div className="w-42 h-42 rounded-xl bg-box flex justify-center items-center">
                            <div className="flex flex-col justify-center items-center" 
                                 onClick={() => { 
                                     navigator.vibrate?.(15)
@@ -40,13 +40,13 @@ export default function UserData(props : UserComponentInterface) {
                                 }}
                             >
                                  {props.box1image.length > 0 && 
-                                    <img className="max-w-36" src={props.box1image} alt={props.box1name} />
+                                    <img className="max-w-32" src={props.box1image} alt={props.box1name} />
                                 }
                                 <span className={`base-class ${textBoxClass}`}>{props.box1name}</span>
                             </div>
                         </div>
 
-                        <div className="w-58 h-58 rounded-xl bg-box flex justify-center items-center" >
+                        <div className="w-42 h-42 rounded-xl bg-box flex justify-center items-center" >
                             <div className="flex flex-col justify-center items-center" 
                                 onClick={() => { 
                                     navigator.vibrate?.(15)
@@ -54,7 +54,7 @@ export default function UserData(props : UserComponentInterface) {
                                 }}
                             >
                                 {props.box2image.length > 0 && 
-                                    <img className="max-w-36" src={props.box2image} alt={props.box2name} />
+                                    <img className="max-w-32" src={props.box2image} alt={props.box2name} />
                                 }
                                 <span className={`base-class ${textBoxClass}`}>{props.box2name}</span>
                             </div>

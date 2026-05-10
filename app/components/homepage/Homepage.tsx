@@ -4,8 +4,8 @@ import Disclaimer from "./Disclaimer"
 export default function Homepage(props: {"nextStep": () => void}){
     return(
       <div>
-        <main className=" flex flex-col justify-between items-center h-screen">
-          <div className="mt-9 px-5 h-85/100">
+        <main className=" flex flex-col justify-between items-center h-dvh">
+          <div className="mt-2 px-5 h-85/100">
             <h1 className="w-full text-display-1 text-center text-title font-bold">
               Test di Autovalutazione del Tasso Alcolico
             </h1>
