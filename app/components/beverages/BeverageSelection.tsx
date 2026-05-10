@@ -6,7 +6,7 @@ export default function BeverageSelection(props: BeveragePropsInterface) {
          <div className="w-full flex justify-between items-center my-2 py-4 pl-4 h-25 bg-white">
             <div className="w-1/2">
                 <div>
-                    <h4 className="text-title text-display-3 font-bold">{props.name}</h4>
+                    <h4 className="text-title text-display-4 font-bold">{props.name}</h4>
                     <p className="mt-2">{props.formatText}</p>
                 </div>
             </div>

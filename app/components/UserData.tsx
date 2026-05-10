@@ -4,7 +4,7 @@ import { WheelPickerKg } from "./WheelPickerKg"
 
 export default function UserData(props : UserComponentInterface) {
     const rootBaseClass = props.step == 4 ? "w-full mt-2 px-5 h-85/100" : "mt-2 px-5 w-full"
-    const textBoxClass = props.box1image.length > 0 ? "text-display-2 font-bold mt-2 text-title text-center" : 'text-display-0 font-bold mt-2 text-title text-center'
+    const textBoxClass = props.box1image.length > 0 ? "text-display-3 font-bold mt-2 text-title text-center" : 'text-display-0 font-bold mt-2 text-title text-center'
     return (
         <div>
             <main className="flex flex-col justify-between items-center h-dvh">
@@ -72,7 +72,7 @@ export default function UserData(props : UserComponentInterface) {
                     
                 </div>
                 {props.step == 4 && 
-                    <NextStep text="VAI ALLE BEVANDE" nextStepFunction={props.nextStep} />    
+                    <NextStep text="PROSEGUI" nextStepFunction={props.nextStep} />    
                 }
             </main>
         </div>

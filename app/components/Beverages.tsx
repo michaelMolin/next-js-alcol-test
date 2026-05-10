@@ -38,9 +38,9 @@ export default function Beverages(props: BeverageSelectionInterface) {
 
     return (
         <div>
-            <main className="flex flex-col justify-between items-center h-screen bg-[#F7FAFF]">
-                <div className="mt-9 w-full h-85/100 flex flex-col">
-                    <div className="flex justify-start items-center bg-white w-full py-4">
+            <main className="flex flex-col justify-between items-center h-h-dvh bg-[#F7FAFF]">
+                <div className="w-full h-85/100 flex flex-col">
+                    <div className="pt-2 flex justify-start items-center bg-white w-full py-4">
                         <div onClick={props.prevStep} className="ml-4 mr-8">
                             <img src="assets/back.svg" alt="back img" />
                         </div>
@@ -55,7 +55,7 @@ export default function Beverages(props: BeverageSelectionInterface) {
                                 onClick={() => scrollToCategory(category.id)}
                             >
                                 <div className={`cursor-pointer ${selectedCategoryId == category.id ? categorySelectedClass : categoryBaseClasse}`}>
-                                    <h2 className="text-display-2 text-title">{category.name}</h2>
+                                    <h2 className="text-display-3 text-title">{category.name}</h2>
                                 </div>
                                 
                                 <div className={`base-class ${selectedCategoryId == category.id ? categoryUnderlineSelectedClass : categoryUnderlineClass}`}></div>
@@ -70,7 +70,7 @@ export default function Beverages(props: BeverageSelectionInterface) {
                                 ref={el => { sectionRefs.current[category.id] = el }}
                             >
                                 <div className="px-4 py-6 bg-blue-200 text-title font-bold flex justify-between items-center">
-                                    <h3 className="text-display-2">{category.name} {category.alcoholPercentageText}</h3>
+                                    <h3 className="text-display-3">{category.name} {category.alcoholPercentageText}</h3>
                                     <img src="assets/info.svg" />
                                 </div>
                                 {beverages.filter(el => checkCategoryId(el, category.id)).map(beverage => (
