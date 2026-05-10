@@ -38,17 +38,17 @@ export default function Beverages(props: BeverageSelectionInterface) {
 
     return (
         <div>
-            <main className="flex flex-col justify-between items-center h-h-dvh bg-[#F7FAFF]">
-                <div className="w-full h-85/100 flex flex-col">
-                    <div className="pt-2 flex justify-start items-center bg-white w-full py-4">
-                        <div onClick={props.prevStep} className="ml-4 mr-8">
+            <main className=" flex flex-col justify-between items-center h-dvh">
+                <div className="mt-2 w-full h-85/100 flex flex-col">
+                    <div className="px-5 flex justify-between items-center w-full py-4">
+                        <div onClick={props.prevStep}>
                             <img src="assets/back.svg" alt="back img" />
                         </div>
                         <div>
                             <h1 className="text-display-2 font-bold text-title">SELEZIONA BEVANDE</h1>
                         </div>
                     </div>
-                    <div className="mx-4 pt-5 flex items-center overflow-x-auto mb-4 shrink-0">
+                    <div className="mx-5 pt-5 flex items-center overflow-x-auto mb-4 shrink-0">
                         {categories.map((category) => (
                             <div
                                 key={category.id}
@@ -65,7 +65,6 @@ export default function Beverages(props: BeverageSelectionInterface) {
                     <div ref={scrollContainerRef} onScroll={handleScroll} className="overflow-y-auto flex-1">
                         {categories.map((category) => (
                             <div 
-                                className="bg-[#DEE5F2]"
                                 key={category.id}
                                 ref={el => { sectionRefs.current[category.id] = el }}
                             >

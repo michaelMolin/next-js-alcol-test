@@ -6,11 +6,11 @@ export default function Homepage(props: {"nextStep": () => void}){
       <div>
         <main className=" flex flex-col justify-between items-center h-dvh">
           <div className="mt-2 px-5 h-85/100">
-            <h1 className="w-full text-display-2 text-center text-title font-bold">
+            <h1 className="w-full text-display-1 text-center text-title font-bold">
               Test di Autovalutazione del Tasso Alcolico
             </h1>
             <div className="flex justify-center my-6">
-              <img className="h-12 w-11" src="assets/img-home.svg" alt="img home"/>
+              <img className="h-14 w-12" src="assets/img-home.svg" alt="img home"/>
             </div>
         
             <Disclaimer 
