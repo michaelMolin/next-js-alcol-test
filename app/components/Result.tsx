@@ -7,7 +7,7 @@ import {genderFactor} from "../hooks/UserHook";
 export default function Result(props: {beverageData : QuantityStateInterface[], userData: UserInterface}) {
         const result: number = getAlcoholicData(props.beverageData) / ( parseInt(props.userData.weight) * genderFactor(props.userData.gender, props.userData.hasEaten));
         console.log(result);
-        let bgClass = "text-center px-4 bg-result-ok flex flex-col justify-center items-center h-screen"
+        let bgClass = "text-center px-5 bg-result-ok flex flex-col justify-center items-center h-screen"
         let title = "Puoi Guidare!"
         let text = "Sei sotto al limite legale"
         
@@ -29,8 +29,8 @@ export default function Result(props: {beverageData : QuantityStateInterface[], 
     return (
         <div>
             <main className={`base-class ${bgClass}`}>
-                <h1 className="text-display-0 font-bold text-title mb-4">{title}</h1>
-                <h2 className="text-display-1 font-bold text-title">{text}</h2>
+                <h1 className="text-display-1 font-bold text-title mb-6">{title}</h1>
+                <h2 className="text-display-2 font-bold text-title">{text}</h2>
             </main>
             
         </div>
