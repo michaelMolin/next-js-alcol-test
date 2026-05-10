@@ -29,7 +29,7 @@ export default function Result(props: {beverageData : QuantityStateInterface[], 
     return (
         <div>
             <main className={`base-class ${bgClass}`}>
-                <h1 className="text-display-0 font-bold text-title mb-4">{title}!</h1>
+                <h1 className="text-display-0 font-bold text-title mb-4">{title}</h1>
                 <h2 className="text-display-1 font-bold text-title">{text}</h2>
             </main>
             
