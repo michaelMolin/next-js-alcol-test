@@ -15,7 +15,7 @@ export default function Homepage(props: {"nextStep": () => void}){
         
             <Disclaimer 
               title="Perchè ti è utile questo test?" 
-              text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
       
             <div className="w-full flex justify-center">
@@ -24,7 +24,7 @@ export default function Homepage(props: {"nextStep": () => void}){
 
             <Disclaimer 
               title="Disclaimer di legge" 
-              text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
           </div>
           <NextStep text="INIZIAMO" nextStepFunction={props.nextStep} />    
