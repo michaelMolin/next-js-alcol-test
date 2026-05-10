@@ -7,7 +7,7 @@ export default function UserData(props : UserComponentInterface) {
     const textBoxClass = props.box1image.length > 0 ? "text-display-1 font-bold mt-2 text-title text-center" : 'text-display-0 font-bold mt-2 text-title text-center'
     return (
         <div>
-            <main className="flex flex-col justify-between items-center h-screen">
+            <main className="flex flex-col justify-between items-center h-dvh">
                 <div className={`base-class ${rootBaseClass}`} >
                     <div onClick={props.prevStep}>
                         <img src="assets/back.svg" alt="back img" />
