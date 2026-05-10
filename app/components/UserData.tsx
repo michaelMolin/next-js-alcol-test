@@ -4,13 +4,18 @@ import { WheelPickerKg } from "./WheelPickerKg"
 
 export default function UserData(props : UserComponentInterface) {
     const rootBaseClass = props.step == 4 ? "w-full mt-2 px-5 h-85/100" : "mt-2 px-5 w-full"
-    const textBoxClass = props.box1image.length > 0 ? "text-display-1 font-bold mt-2 text-title text-center" : 'text-display-0 font-bold mt-2 text-title text-center'
+    const textBoxClass = props.box1image.length > 0 ? "text-display-2 font-bold mt-2 text-title text-center" : 'text-display-0 font-bold mt-2 text-title text-center'
     return (
         <div>
             <main className="flex flex-col justify-between items-center h-dvh">
                 <div className={`base-class ${rootBaseClass}`} >
-                    <div onClick={props.prevStep}>
-                        <img src="assets/back.svg" alt="back img" />
+                    <div className="flex justify-between items-center">
+                        <div onClick={props.prevStep}>
+                            <img src="assets/back.svg" alt="back img" />
+                        </div>
+                        <div className="my-4 w-full flex justify-end items-center">
+                            <img src="assets/info.svg" />
+                        </div>
                     </div>
                     <div className="my-2 w-full h-2 border rounded-full bg-gray-300 relative">
                         <div className="absolute top-0 left-0 h-full rounded-full bg-blue transition-all duration-300"
@@ -20,9 +25,7 @@ export default function UserData(props : UserComponentInterface) {
                     <div className="w-full fex text-center">
                         {props.step} di 4
                     </div>
-                    <div className="my-4 w-full flex justify-end items-center">
-                        <img src="assets/info.svg" />
-                    </div>
+                   
                     <h1 className="w-full text-display-1 text-center text-title font-bold min-h-16">
                         {props.title}
                     </h1>
@@ -31,8 +34,8 @@ export default function UserData(props : UserComponentInterface) {
                          {props.text} 
                     </p>
                     {props.step !== 4 &&
-                    <div className="my-3 flex flex-col justify-around items-center gap-24">
-                        <div className="w-42 h-42 rounded-xl bg-box flex justify-center items-center">
+                    <div className="flex flex-col justify-around items-center gap-18">
+                        <div className="w-40 h-40 rounded-xl bg-box flex justify-center items-center">
                            <div className="flex flex-col justify-center items-center" 
                                 onClick={() => { 
                                     navigator.vibrate?.(15)
@@ -46,7 +49,7 @@ export default function UserData(props : UserComponentInterface) {
                             </div>
                         </div>
 
-                        <div className="w-42 h-42 rounded-xl bg-box flex justify-center items-center" >
+                        <div className="w-40 h-40 rounded-xl bg-box flex justify-center items-center" >
                             <div className="flex flex-col justify-center items-center" 
                                 onClick={() => { 
                                     navigator.vibrate?.(15)

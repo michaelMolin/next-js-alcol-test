@@ -1,9 +1,9 @@
 export default function Disclaimer(props: {"title": string, "text": string}) 
 {
     return (
-        <div className="w-full my-6">
+        <div className="w-full my-4">
             <h2 className="text-display-3 text-blue font-bold">{props.title}</h2>
-            <p className="text-display-4 my-4">
+            <p className="text-display-4 my-2">
                 {props.text}
             </p>
             <div className="w-full flex justify-end items-center">
