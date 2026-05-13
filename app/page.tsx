@@ -41,7 +41,7 @@ export default function Home() {
       }
       {step == 1 &&
         <UserData step={step} prevStep={prevStep}
-          title="Selezionata il tuo SESSO"
+          title="Seleziona il tuo SESSO"
           text="Il sesso biologico influisce sul metabolismo dell'alcol."
           box1name="UOMO"
           box1function={() => handleGenderChange('M')}
