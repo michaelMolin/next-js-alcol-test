@@ -1,21 +1,21 @@
 [
   {
     "id": 1,
-    "name": "Birra Lager",
+    "name": "Birra Bionda",
     "image": "/images/beer-lager.jpg",
     "category_id": "1",
     "format": 330,
     "formatText": "Birra piccola (330ml)",
-    "alcoholPercentage": 4
+    "alcoholPercentage": 5
   },
   {
     "id": 2,
-    "name": "Birra Lager",
+    "name": "Birra Bionda",
     "image": "/images/beer-lager.jpg",
     "category_id": "1",
     "format": 500,
     "formatText": "Birra media (500ml)",
-    "alcoholPercentage": 4
+    "alcoholPercentage": 5
   },
   {
     "id": 3,
@@ -24,52 +24,52 @@
     "category_id": "1",
     "format": 330,
     "formatText": "Birra piccola (330ml)",
-    "alcoholPercentage": 6
+    "alcoholPercentage": 5
   },
   {
     "id": 4,
     "name": "Birra Rossa",
     "image": "/images/beer-lager.jpg",
     "category_id": "1",
-    "format": 330,
+    "format": 500,
     "formatText": "Birra media (500ml)",
-    "alcoholPercentage": 6
+    "alcoholPercentage": 5
   },
   {
     "id": 5,
     "name": "Vino Rosso",
     "image": "/images/wine-red.jpg",
     "category_id":"2",
-    "format": 150,
-    "formatText": "Calice (150ml)",
-    "alcoholPercentage": 8
+    "format": 125,
+    "formatText": "Calice (125ml)",
+    "alcoholPercentage": 12
   },
   {
     "id": 6,
     "name": "Vino Rosso",
     "image": "/images/wine-red.jpg",
     "category_id":"2",
-    "format": 750,
-    "formatText": "Bottiglia (750ml)",
-    "alcoholPercentage": 8
+    "format": 30,
+    "formatText": "Ombra (30ml)",
+    "alcoholPercentage": 12
   },
   {
-    "id": 11,
+    "id": 15,
     "name": "Vino Bianco",
     "image": "/images/wine-red.jpg",
     "category_id":"2",
-    "format": 150,
+    "format": 125,
     "formatText": "Calice (125ml)",
-    "alcoholPercentage": 4
+    "alcoholPercentage": 12
   },
   {
-    "id": 8,
-    "name": "Vodka Lemon",
-    "image": "/images/vodka.jpg",
-    "category_id": "3",
-    "format": 250,
-    "formatText": "Cocktail (250ml)",
-    "alcoholPercentage": 30
+    "id": 14,
+    "name": "Vino Bianco",
+    "image": "/images/wine-red.jpg",
+    "category_id":"2",
+    "format": 30,
+    "formatText": "Ombra (30ml)",
+    "alcoholPercentage": 12
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "category_id": "3",
     "format": 250,
     "formatText": "Cocktail (250ml)",
-    "alcoholPercentage": 25
+    "alcoholPercentage": 12
   },
 
   {
@@ -88,7 +88,7 @@
     "category_id": "3",
     "format": 250,
     "formatText": "Cocktail (250ml)",
-    "alcoholPercentage": 20
+    "alcoholPercentage": 10
   },
   {
     "id": 12,
@@ -97,7 +97,7 @@
     "category_id": "3",
     "format": 250,
     "formatText": "Cocktail (250ml)",
-    "alcoholPercentage": 20
+    "alcoholPercentage": 10
   },
   {
     "id": 13,
@@ -106,6 +106,15 @@
     "category_id": "3",
     "format": 250,
     "formatText": "Cocktail (250ml)",
-    "alcoholPercentage": 20
+    "alcoholPercentage": 15
+  },
+  {
+    "id": 16,
+    "name": "Spritz Campari",
+    "image": "/images/vodka.jpg",
+    "category_id": "3",
+    "format": 250,
+    "formatText": "Cocktail (250ml)",
+    "alcoholPercentage": 25
   }
 ]
