@@ -41,7 +41,7 @@ export default function Beverages(props: BeverageSelectionInterface) {
             <main className=" flex flex-col justify-between items-center h-dvh">
                 <div className="mt-2 w-full h-85/100 flex flex-col">
                     <div className="px-5 flex justify-between items-center w-full py-4">
-                        <div onClick={props.prevStep} className="mr-2">
+                        <div onClick={props.prevStep} className="mr-1">
                             <img src="assets/back.svg" alt="back img" />
                         </div>
                         <div>
