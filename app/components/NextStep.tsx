@@ -3,7 +3,7 @@ export default function NextStep(props: {'text' : string, 'nextStepFunction' : (
     return (
         <div className="bg-blue w-full h-20/100 flex justify-center items-center">
             <button onClick= {() => {
-                    navigator.vibrate?.(15)
+                    navigator.vibrate?.(30)
                     props.nextStepFunction()
                 }    
             }

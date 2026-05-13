@@ -38,7 +38,7 @@ export default function UserData(props : UserComponentInterface) {
                         <div className="w-50 h-50 rounded-xl bg-box flex justify-center items-center">
                            <div className="flex flex-col justify-center items-center" 
                                 onClick={() => { 
-                                    navigator.vibrate?.(15)
+                                    navigator.vibrate?.(30)
                                     props.box1function()
                                 }}
                             >
@@ -52,7 +52,7 @@ export default function UserData(props : UserComponentInterface) {
                         <div className="w-50 h-50 rounded-xl bg-box flex justify-center items-center" >
                             <div className="flex flex-col justify-center items-center" 
                                 onClick={() => { 
-                                    navigator.vibrate?.(15)
+                                    navigator.vibrate?.(30)
                                     props.box2function()
                                 }}
                             >
