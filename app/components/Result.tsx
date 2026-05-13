@@ -6,27 +6,27 @@ import {genderFactor} from "../hooks/UserHook";
 
 export default function Result(props: {beverageData : QuantityStateInterface[], userData: UserInterface, step: number, prevStep: () => void}) {
         const result: number = getAlcoholicData(props.beverageData) / ( parseInt(props.userData.weight) * genderFactor(props.userData.gender, props.userData.hasEaten));
-        let bgClass = "text-center bg-result-ok flex flex-col justify-between h-screen mt-2"
+        let bgClass = "text-center bg-result-ok flex flex-col justify-between h-dvh mt-2"
         let text = "Ti sei dimenticato di bere oggi?"
         let imgMeme="assets/salvini-meme-1.webp"
         
         if(result > 0 && result < 0.49) {
-            bgClass = "text-center px-4 bg-result-warning flex flex-col justify-center items-center h-screen mt-2"
+            bgClass = "text-center px-4 bg-result-warning flex flex-col justify-center items-center h-dvh mt-2"
             text = "Nessuna sanzione amministrativa ma sta attento che se ti pigli un altro bicchiere so cazzi."
             imgMeme="assets/salvini-2.png"
         }
         if(result > 0.5 && result < 0.8) {
-            bgClass = "text-center px-4 bg-result-danger flex flex-col justify-center items-center h-screen mt-2"
+            bgClass = "text-center px-4 bg-result-danger flex flex-col justify-center items-center h-dvh mt-2"
             text = "Torna a casa a piedi che rischi che rischi la multa"
             imgMeme="assets/salvini-template.jpg"
         }
         if(result > 0.8) {
-            bgClass = "text-center px-4 bg-result-danger flex flex-col justify-center items-center h-screen mt-2"
+            bgClass = "text-center px-4 bg-result-danger flex flex-col justify-center items-center h-dvh mt-2"
             text = "Se riesci a stare in piedi ti si n'eroe ma occhio che ti arrestano se ti beccano"
             imgMeme="assets/salvini-template.jpg"
         }
         if(result > 0 && props.userData.hasDrivenLicense) {
-            bgClass = "text-center px-4 bg-result-danger flex flex-col justify-center items-center h-screen mt-2"
+            bgClass = "text-center px-4 bg-result-danger flex flex-col justify-center items-center h-dvh mt-2"
             text = "Sei un neopatentato, il limite è a 0, non puoi bere!"
             imgMeme="assets/salvini-meme-4.jpg"
         }
