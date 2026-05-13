@@ -44,8 +44,6 @@ export default function Result(props: {beverageData : QuantityStateInterface[], 
                     <img src={imgMeme} className="img-fluid"/>
                 </div>
             </main>
-            
-        
         </div>
     )
 }
