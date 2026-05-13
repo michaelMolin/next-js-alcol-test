@@ -11,22 +11,22 @@ export default function Result(props: {beverageData : QuantityStateInterface[], 
         let imgMeme="assets/salvini-meme-1.webp"
         
         if(result > 0 && result < 0.49) {
-            bgClass = "text-center px-4 bg-result-warning flex flex-col justify-center items-center h-dvh pt-2"
+            bgClass = "text-center bg-result-warning flex flex-col justify-between h-dvh pt-2"
             text = "Nessuna sanzione amministrativa ma sta attento che se ti pigli un altro bicchiere so cazzi."
             imgMeme="assets/salvini-2.png"
         }
         if(result > 0.5 && result < 0.8) {
-            bgClass = "text-center px-4 bg-result-danger flex flex-col justify-center items-center h-dvh pt-2"
+            bgClass = "text-center bg-result-danger flex flex-col justify-between h-dvh pt-2"
             text = "Torna a casa a piedi che rischi che rischi la multa"
             imgMeme="assets/salvini-template.jpg"
         }
         if(result > 0.8) {
-            bgClass = "text-center px-4 bg-result-danger flex flex-col justify-center items-center h-dvh pt-2"
+            bgClass = "text-center bg-result-danger flex flex-col justify-between h-dvh pt-2"
             text = "Se riesci a stare in piedi ti si n'eroe ma occhio che ti arrestano se ti beccano"
             imgMeme="assets/salvini-template.jpg"
         }
         if(result > 0 && props.userData.hasDrivenLicense) {
-            bgClass = "text-center px-4 bg-result-danger flex flex-col justify-center items-center h-dvh pt-2"
+            bgClass = "text-center bg-result-danger flex flex-col justify-between h-dvh pt-2"
             text = "Sei un neopatentato, il limite è a 0, non puoi bere!"
             imgMeme="assets/salvini-meme-4.jpg"
         }
