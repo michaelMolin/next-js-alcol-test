@@ -34,8 +34,8 @@ export default function UserData(props : UserComponentInterface) {
                          {props.text} 
                     </p>
                     {props.step !== 4 &&
-                    <div className="flex flex-col justify-around items-center gap-18">
-                        <div className="w-40 h-40 rounded-xl bg-box flex justify-center items-center">
+                    <div className="flex flex-col justify-around items-center gap-4">
+                        <div className="w-50 h-50 rounded-xl bg-box flex justify-center items-center">
                            <div className="flex flex-col justify-center items-center" 
                                 onClick={() => { 
                                     navigator.vibrate?.(15)
@@ -49,7 +49,7 @@ export default function UserData(props : UserComponentInterface) {
                             </div>
                         </div>
 
-                        <div className="w-40 h-40 rounded-xl bg-box flex justify-center items-center" >
+                        <div className="w-50 h-50 rounded-xl bg-box flex justify-center items-center" >
                             <div className="flex flex-col justify-center items-center" 
                                 onClick={() => { 
                                     navigator.vibrate?.(15)

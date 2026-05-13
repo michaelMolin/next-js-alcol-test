@@ -113,6 +113,8 @@ export default function Home() {
         <Result
           beverageData={beverageData}
           userData={userData}
+          step={step} 
+          prevStep={prevStep}
         />
       }
     </div>

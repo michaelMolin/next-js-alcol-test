@@ -13,7 +13,7 @@ export const useBeverageData = () => {
     const handleQuantityChange = (productId: number, newQuantity: number) => {
         setBeverageData(prev =>
             prev.map(item =>
-                item.id === productId ? ({ ...item, quantity: newQuantity }) : item)
+                item.id === productId ? ({ ...item, quantity: newQuantity < 0 ? 0 : newQuantity }) : item)
         )
     }
 

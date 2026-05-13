@@ -17,10 +17,6 @@ export default function Homepage(props: {"nextStep": () => void}){
               title="Perchè ti è utile questo test?" 
               text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
-      
-            <div className="w-full flex justify-center">
-              <div className="w-2/10 h-2 border-blue border rounded-full bg-blue"></div>
-            </div>
 
             <Disclaimer 
               title="Disclaimer di legge" 

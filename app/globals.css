@@ -10,6 +10,7 @@
   --color-blue: #00A7DC;
   --color-box: #CCE8F1;
   --color-text: #666673;
+  --color-beverage-selected: #F3D9FF;
 }
 
 .bg-result-ok {
@@ -36,6 +37,8 @@
   --text-display-3--line-height: 1.25rem;
   --text-display-4: 1.125rem;
   --text-display-4--line-height: 1.25rem;
+  --text-display-5: 1rem;
+  --text-display-5--line-height: 1.16rem;
   --text-cta-advance: 2.5rem; 
   --text-cta-advance--line-height: 2.5rem; 
   --font-heading: var(--font-sans); 

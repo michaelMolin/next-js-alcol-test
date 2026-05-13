@@ -8,32 +8,30 @@ export default function Quantity(props: QuantityPropsInterface) {
         props.onQuantityChange(props.productId, newQuantity);
     }
 
+    const beverageBoxClass = currentDataBeverage.quantity > 0 
+        ? 'text-center bg-beverage-selected mr-1 text-display-1 font-bold w-15 text-title h-25' 
+        : 'text-center bg-[#F7FAFF] mr-1 text-display-1 font-bold w-15 text-title h-25'
+
     return (
-        <div className="w-1/2 flex justify-between items-center h-full">
+        <div className="w-1/2 flex justify-between items-center h-full gap-1">
                 <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input"
-                        className="bg-[#F7FAFF] mr-1 text-display-1 font-bold w-1/4 text-title flex justify-center items-center h-25"
+                        className="bg-[#F7FAFF] mr-1 text-display-1 font-bold  w-15 text-title flex justify-center items-center h-25"
                     onClick={() => props.onQuantityChange(props.productId, currentDataBeverage.quantity - 1)}
                 >
-                    <svg className="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                         width="24" height="24" fill="" viewBox="0 0 24 24">
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                              d="M5 12h14"/>
-                    </svg>
+                    -
                 </button>
-                <input type="text" id="quantity-input" data-input-counter aria-describedby="helper-text-explanation"
-                       className="text-center bg-[#F7FAFF] mr-1 text-display-1 font-bold w-1/2 text-title h-25"
+                <input type="number" id="quantity-input" data-input-counter aria-describedby="helper-text-explanation"
+                       min="1"
+                       max="99"
+                       className={`base-class ${beverageBoxClass}`}
                        value={currentDataBeverage.quantity}
                        onChange={handleInputChange}
                    required/>
                 <button type="button" id="increment-button" data-input-counter-increment="quantity-input"
-                        className="bg-[#F7FAFF] mr-1 text-display-1 font-bold w-1/4 text-center text-title flex justify-center items-center h-25"
+                        className="bg-[#F7FAFF] mr-1 text-display-1 font-bold text-center text-title flex justify-center items-center h-25 w-15"
                     onClick={() => props.onQuantityChange(props.productId, currentDataBeverage.quantity + 1)}
                 >
-                    <svg className="w-8 h-8 text-heading" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                         width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                              d="M5 12h14m-7 7V5"/>
-                    </svg>
+                    +
                 </button>
             </div>
     )

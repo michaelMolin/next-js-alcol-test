@@ -10,7 +10,7 @@ export default function Beverages(props: BeverageSelectionInterface) {
     const categories: BeverageCategoryInterface[] = CategoriesData;
     const beverages: BeverageInterface[] = BeverageList
     const categoryBaseClasse = "px-4 py-2";
-    const categorySelectedClass = "px-4 py-2 bg-blue-200 font-bold rounded-2xl mb-2 b-blue"
+    const categorySelectedClass = "px-4 py-2 bg-box font-bold rounded-2xl mb-2 b-blue"
     const categoryUnderlineClass = "w-full h-1 rounded-full mb-2" 
     const categoryUnderlineSelectedClass = "w-full h-1 border-blue border rounded-full bg-blue"
 
@@ -41,7 +41,7 @@ export default function Beverages(props: BeverageSelectionInterface) {
             <main className=" flex flex-col justify-between items-center h-dvh">
                 <div className="mt-2 w-full h-85/100 flex flex-col">
                     <div className="px-5 flex justify-between items-center w-full py-4">
-                        <div onClick={props.prevStep}>
+                        <div onClick={props.prevStep} className="mr-2">
                             <img src="assets/back.svg" alt="back img" />
                         </div>
                         <div>
@@ -68,7 +68,7 @@ export default function Beverages(props: BeverageSelectionInterface) {
                                 key={category.id}
                                 ref={el => { sectionRefs.current[category.id] = el }}
                             >
-                                <div className="px-4 py-6 bg-blue-200 text-title font-bold flex justify-between items-center">
+                                <div className="px-4 py-6 bg-box text-title font-bold flex justify-between items-center">
                                     <h3 className="text-display-3">{category.name} {category.alcoholPercentageText}</h3>
                                     <img src="assets/info.svg" />
                                 </div>
