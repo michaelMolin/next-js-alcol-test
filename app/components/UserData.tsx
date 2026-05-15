@@ -3,8 +3,8 @@ import NextStep from "./NextStep"
 import { WheelPickerKg } from "./WheelPickerKg"
 
 export default function UserData(props : UserComponentInterface) {
-    const rootBaseClass = props.step == 4 ? "w-full mt-2 px-5 h-80/100" : "mt-2 px-5 w-full"
-    const textBoxClass = props.box1image.length > 0 ? "uppercase text-display-3 font-bold mt-2 text-title text-center" : 'uppercase text-display-0 font-bold mt-2 text-title text-center'
+    const rootBaseClass = props.step == 3 ? "w-full mt-2 px-5 h-80/100" : "mt-2 px-5 w-full"
+    const textBoxClass = props.box1image.length > 0 ? "uppercase text-display-2 font-bold mt-2 text-title text-center" : 'uppercase text-display-0 font-bold mt-2 text-title text-center'
     return (
         <div>
             <main className="flex flex-col justify-between items-center h-dvh">
@@ -33,7 +33,7 @@ export default function UserData(props : UserComponentInterface) {
                     <p className="text-display-4 my-4 min-h-8">
                          {props.text} 
                     </p>
-                    {props.step !== 4 &&
+                    {props.step !== 3 &&
                     <div className="flex flex-col justify-around items-center gap-4">
                         <div className="w-50 h-50 rounded-xl bg-box flex justify-center items-center">
                            <div className="flex flex-col justify-center items-center" 
@@ -43,7 +43,7 @@ export default function UserData(props : UserComponentInterface) {
                                 }}
                             >
                                  {props.box1image.length > 0 && 
-                                    <img className="max-w-32" src={props.box1image} alt={props.box1name} />
+                                    <img className="max-w-36" src={props.box1image} alt={props.box1name} />
                                 }
                                 <span className={`base-class ${textBoxClass}`}>{props.box1name}</span>
                             </div>
@@ -57,22 +57,22 @@ export default function UserData(props : UserComponentInterface) {
                                 }}
                             >
                                 {props.box2image.length > 0 && 
-                                    <img className="max-w-32" src={props.box2image} alt={props.box2name} />
+                                    <img className="max-w-36" src={props.box2image} alt={props.box2name} />
                                 }
                                 <span className={`base-class ${textBoxClass}`}>{props.box2name}</span>
                             </div>
                         </div>
                     </div>
                     }
-                    {props.step == 4 && 
+                    {props.step == 3 && 
                     <div className="my-6 flex flex-col justify-center items-center">
                         <WheelPickerKg weight={props.weight} handleWeightFunction={props.handleWeightFunction}/>
                     </div>
                     }
                     
                 </div>
-                {props.step == 4 && 
-                    <NextStep text="PROSEGUI" nextStepFunction={props.nextStep} />    
+                {props.step == 3 && 
+                    <NextStep text="CONTINUA" nextStepFunction={props.nextStep} />    
                 }
             </main>
         </div>

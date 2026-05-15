@@ -1,17 +1,17 @@
 [
   {
-    "id": "1",
-    "name": "Birre",
-    "image": "/images/beer-lager.jpg",
-    "alcoholPercentageText": "4° - 6° Vol",
-    "alcoholPercentageNumber": 5
-  },
-  {
     "id": "2",
     "name": "Vino",
     "image": "/images/wine-red.jpg",
     "alcoholPercentageText": "8° - 12° Vol",
     "alcoholPercentageNumber": 10
+  },
+  {
+    "id": "1",
+    "name": "Birre",
+    "image": "/images/beer-lager.jpg",
+    "alcoholPercentageText": "4° - 6° Vol",
+    "alcoholPercentageNumber": 5
   },
   {
     "id": "3",

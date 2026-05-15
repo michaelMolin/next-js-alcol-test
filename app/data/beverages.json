@@ -1,74 +1,74 @@
 [
   {
     "id": 1,
-    "name": "Birra Bionda",
+    "name": "Bionda piccola",
     "image": "/images/beer-lager.jpg",
     "category_id": "1",
     "format": 330,
-    "formatText": "Birra piccola (330ml)",
+    "formatText": "330ml",
     "alcoholPercentage": 5
   },
   {
     "id": 2,
-    "name": "Birra Bionda",
+    "name": "Bionda media",
     "image": "/images/beer-lager.jpg",
     "category_id": "1",
     "format": 500,
-    "formatText": "Birra media (500ml)",
+    "formatText": "500ml",
     "alcoholPercentage": 5
   },
   {
     "id": 3,
-    "name": "Birra Rossa",
+    "name": "Rossa piccola",
     "image": "/images/beer-lager.jpg",
     "category_id": "1",
     "format": 330,
-    "formatText": "Birra piccola (330ml)",
+    "formatText": "330ml",
     "alcoholPercentage": 5
   },
   {
     "id": 4,
-    "name": "Birra Rossa",
+    "name": "Rossa media",
     "image": "/images/beer-lager.jpg",
     "category_id": "1",
     "format": 500,
-    "formatText": "Birra media (500ml)",
+    "formatText": "500ml",
     "alcoholPercentage": 5
   },
   {
     "id": 5,
-    "name": "Vino Rosso",
+    "name": "Calice di rosso",
     "image": "/images/wine-red.jpg",
     "category_id":"2",
     "format": 125,
-    "formatText": "Calice (125ml)",
+    "formatText": "125ml",
     "alcoholPercentage": 12
   },
   {
     "id": 6,
-    "name": "Vino Rosso",
+    "name": "Ombra di rosso",
     "image": "/images/wine-red.jpg",
     "category_id":"2",
     "format": 30,
-    "formatText": "Ombra (30ml)",
+    "formatText": "30ml",
     "alcoholPercentage": 12
   },
   {
     "id": 15,
-    "name": "Vino Bianco",
+    "name": "Calice di bianco",
     "image": "/images/wine-red.jpg",
     "category_id":"2",
     "format": 125,
-    "formatText": "Calice (125ml)",
+    "formatText": "125ml",
     "alcoholPercentage": 12
   },
   {
     "id": 14,
-    "name": "Vino Bianco",
+    "name": "Ombra di bianco",
     "image": "/images/wine-red.jpg",
     "category_id":"2",
     "format": 30,
-    "formatText": "Ombra (30ml)",
+    "formatText": "30ml",
     "alcoholPercentage": 12
   },
   {
@@ -77,7 +77,7 @@
     "image": "/images/vodka.jpg",
     "category_id": "3",
     "format": 250,
-    "formatText": "Cocktail (250ml)",
+    "formatText": "250ml",
     "alcoholPercentage": 12
   },
 
@@ -87,7 +87,7 @@
     "image": "/images/vodka.jpg",
     "category_id": "3",
     "format": 250,
-    "formatText": "Cocktail (250ml)",
+    "formatText": "250ml",
     "alcoholPercentage": 10
   },
   {
@@ -96,7 +96,7 @@
     "image": "/images/vodka.jpg",
     "category_id": "3",
     "format": 250,
-    "formatText": "Cocktail (250ml)",
+    "formatText": "250ml",
     "alcoholPercentage": 10
   },
   {
@@ -105,7 +105,7 @@
     "image": "/images/vodka.jpg",
     "category_id": "3",
     "format": 250,
-    "formatText": "Cocktail (250ml)",
+    "formatText": "250ml",
     "alcoholPercentage": 15
   },
   {
@@ -114,7 +114,7 @@
     "image": "/images/vodka.jpg",
     "category_id": "3",
     "format": 250,
-    "formatText": "Cocktail (250ml)",
+    "formatText": "250ml",
     "alcoholPercentage": 25
   }
 ]
