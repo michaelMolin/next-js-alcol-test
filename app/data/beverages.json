@@ -36,6 +36,15 @@
     "alcoholPercentage": 5
   },
   {
+    "id": 6,
+    "name": "Ombra di rosso",
+    "image": "/images/wine-red.jpg",
+    "category_id":"2",
+    "format": 30,
+    "formatText": "30ml",
+    "alcoholPercentage": 12
+  },
+  {
     "id": 5,
     "name": "Calice di rosso",
     "image": "/images/wine-red.jpg",
@@ -44,9 +53,9 @@
     "formatText": "125ml",
     "alcoholPercentage": 12
   },
-  {
-    "id": 6,
-    "name": "Ombra di rosso",
+   {
+    "id": 14,
+    "name": "Ombra di bianco",
     "image": "/images/wine-red.jpg",
     "category_id":"2",
     "format": 30,
@@ -60,15 +69,6 @@
     "category_id":"2",
     "format": 125,
     "formatText": "125ml",
-    "alcoholPercentage": 12
-  },
-  {
-    "id": 14,
-    "name": "Ombra di bianco",
-    "image": "/images/wine-red.jpg",
-    "category_id":"2",
-    "format": 30,
-    "formatText": "30ml",
     "alcoholPercentage": 12
   },
   {

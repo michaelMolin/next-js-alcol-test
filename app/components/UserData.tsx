@@ -4,7 +4,7 @@ import { WheelPickerKg } from "./WheelPickerKg"
 
 export default function UserData(props : UserComponentInterface) {
     const rootBaseClass = props.step == 3 ? "w-full mt-2 px-5 h-80/100" : "mt-2 px-5 w-full"
-    const textBoxClass = props.box1image.length > 0 ? "uppercase text-display-2 font-bold mt-2 text-title text-center" : 'uppercase text-display-0 font-bold mt-2 text-title text-center'
+    const textBoxClass = props.box1image.length > 0 ? "uppercase text-display-3 font-bold mt-3 text-title text-center" : 'uppercase text-display-0 font-bold mt-2 text-title text-center'
     return (
         <div>
             <main className="flex flex-col justify-between items-center h-dvh">

@@ -61,10 +61,10 @@ export default function Home() {
           text="Il cibo nello stomaco rallenta l'assorbimento dell'alcol."
           box1name="Stomaco pieno"
           box1function={() => handleHasEatenChange(true)}
-          box1image="assets/stomaco_pieno.svg"
+          box1image="assets/stomaco_pieno_1.png"
           box2name="Stomaco vuoto"
           box2function={() => handleHasEatenChange(false)}
-          box2image="assets/stomaco_vuoto.svg"
+          box2image="assets/stomaco_vuoto_1.png"
           nextStep={nextStep}
           handleWeightFunction={handleWeightChange}
           weight={userData.weight}
