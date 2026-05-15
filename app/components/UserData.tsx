@@ -31,7 +31,7 @@ export default function UserData(props : UserComponentInterface) {
                     </h1>
                     
                     <p className="text-display-4 my-4 min-h-8">
-                         {props.text} 
+                         {props.text}
                     </p>
                     {props.step !== 3 &&
                     <div className="flex flex-col justify-around items-center gap-4">

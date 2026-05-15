@@ -72,21 +72,6 @@ export default function Home() {
       }
       {step == 3 &&
         <UserData step={step} prevStep={prevStep}
-          title="Sei NEOPATENTATO?"
-          text="Per i neopatentati il limite legale è 0,0 g/L."
-          box1name="SI"
-          box1function={() => handleDrivingLicense(true)}
-          box1image=""
-          box2name="NO"
-          box2function={() => handleDrivingLicense(false)}
-          box2image=""
-          nextStep={nextStep}
-          handleWeightFunction={handleWeightChange}
-          weight={userData.weight}
-        />
-      }
-      {step == 4 &&
-        <UserData step={step} prevStep={prevStep}
           title="Seleziona il tuo PESO"
           text="Espresso in chilogrammi (kg)."
           box1name="UOMO"
@@ -95,6 +80,21 @@ export default function Home() {
           box2name="DONNA"
           box2function={() => handleGenderChange('F')}
           box2image="assets/women.svg"
+          nextStep={nextStep}
+          handleWeightFunction={handleWeightChange}
+          weight={userData.weight}
+        />
+      }
+      {step == 4 &&
+        <UserData step={step} prevStep={prevStep}
+          title="Sei NEOPATENTATO?"
+          text="Per i neopatentati il limite legale è 0,0 g/L."
+          box1name="SI"
+          box1function={() => handleDrivingLicense(true)}
+          box1image=""
+          box2name="NO"
+          box2function={() => handleDrivingLicense(false)}
+          box2image=""
           nextStep={nextStep}
           handleWeightFunction={handleWeightChange}
           weight={userData.weight}
