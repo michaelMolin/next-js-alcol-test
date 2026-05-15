@@ -43,7 +43,7 @@ export default function UserData(props : UserComponentInterface) {
                                 }}
                             >
                                  {props.box1image.length > 0 && 
-                                    <img className="max-w-36" src={props.box1image} alt={props.box1name} />
+                                    <img className="max-w-30" src={props.box1image} alt={props.box1name} />
                                 }
                                 <span className={`base-class ${textBoxClass}`}>{props.box1name}</span>
                             </div>
@@ -57,7 +57,7 @@ export default function UserData(props : UserComponentInterface) {
                                 }}
                             >
                                 {props.box2image.length > 0 && 
-                                    <img className="max-w-36" src={props.box2image} alt={props.box2name} />
+                                    <img className="max-w-30" src={props.box2image} alt={props.box2name} />
                                 }
                                 <span className={`base-class ${textBoxClass}`}>{props.box2name}</span>
                             </div>

@@ -7,7 +7,7 @@ export default function Homepage(props: {"nextStep": () => void}){
         <main className=" flex flex-col justify-between items-center h-dvh">
           <div className="mt-2 px-5 h-80/100 flex flex-col justify-center items-center">
             <h1 className="w-full text-display-2 text-center text-title font-bold uppercase">
-              Test di Autovalutazione del Tasso Alcolemico
+              Test di Autovalutazione Tasso Alcolemico
             </h1>
             <div className="flex justify-center my-8">
               <img className="h-24 w-20" src="assets/img-home.svg" alt="img home"/>
