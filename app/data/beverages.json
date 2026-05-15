@@ -72,16 +72,6 @@
     "alcoholPercentage": 12
   },
   {
-    "id": 9,
-    "name": "Gin Tonic",
-    "image": "/images/vodka.jpg",
-    "category_id": "3",
-    "format": 250,
-    "formatText": "250ml",
-    "alcoholPercentage": 12
-  },
-
-  {
     "id": 11,
     "name": "Spritz Aperol",
     "image": "/images/vodka.jpg",
@@ -115,6 +105,15 @@
     "category_id": "3",
     "format": 250,
     "formatText": "250ml",
-    "alcoholPercentage": 25
+    "alcoholPercentage": 16
+  },
+  {
+    "id": 9,
+    "name": "Gin Tonic",
+    "image": "/images/vodka.jpg",
+    "category_id": "3",
+    "format": 250,
+    "formatText": "250ml",
+    "alcoholPercentage": 12
   }
 ]

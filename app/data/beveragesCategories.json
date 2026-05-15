@@ -3,8 +3,8 @@
     "id": "2",
     "name": "Vino",
     "image": "/images/wine-red.jpg",
-    "alcoholPercentageText": "8° - 12° Vol",
-    "alcoholPercentageNumber": 10
+    "alcoholPercentageText": "10° - 12° Vol",
+    "alcoholPercentageNumber": 12
   },
   {
     "id": "1",
@@ -15,9 +15,9 @@
   },
   {
     "id": "3",
-    "name": "Cocktails",
+    "name": "Aperitivi",
     "image": "/images/vodka.jpg",
-    "alcoholPercentageText": "30° - 40° Vol",
-    "alcoholPercentageNumber": 30
+    "alcoholPercentageText": "10° - 16° Vol",
+    "alcoholPercentageNumber": 14
   }
 ]
