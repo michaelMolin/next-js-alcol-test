@@ -10,7 +10,7 @@ export default function Homepage(props: {"nextStep": () => void}){
               Test di Autovalutazione Tasso Alcolemico
             </h1>
             <div className="flex justify-center my-8">
-              <img className="h-24 w-20" src="assets/tasso_alcolico.png" alt="img home"/>
+              <img className="h-28 w-28" src="assets/tasso_alcolico.png" alt="img home"/>
             </div>
         
             <div className="flex flex-col gap-6">
